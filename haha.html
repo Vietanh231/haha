@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Birthday's Viet</title>
+	<link rel="icon" href="https://emojigraph.org/media/google/birthday-cake_1f382.png"/>
+	<style>
+		h1{
+			text-align: center;
+			color: black;
+		}
+		html{
+			background-image: url("https://img.freepik.com/premium-photo/birthday-background-with-balloons-cake-gifts_979520-53904.jpg?semt=ais_hybrid&w=740");
+		}
+		.tab{
+			overflow:hidden;
+			border-bottom: 3px solid #FFD357;
+		}
+		.tab button {
+			border-radius: 10px;
+			border-bottom-right-radius: 1px;
+			border-bottom-left-radius: 1px;
+			background-color: #FFD357;
+			border: 1px solid #FFD357;
+			outline:none;
+			padding: 10px 20px;
+			cursor: pointer;
+			transition: 0.3s;
+			font-size:15px;
+		}
+		.tab button:hover{
+			background-color: #ddd;
+		}
+		.tab button.active{
+			color:red;
+		}
+		.tabcontent{
+			display:none;
+			padding: 20px;
+			border: 1px solid #ccc;
+			background-color: #ECECEC;
+			border-radius: 10px;
+			border-top-left-radius: 1px;
+			border-top-right-radius: 1px;
+		}
+		.broimg{
+			display: flex;
+			justify-content: 20px;
+			align-items: center;
+		}
+		.sigma{
+			border-right: 20px solid #ECECEC;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Happy Birthday to Viet!	</h1>
+	<div class= "tab">
+		<button class="tablinks" onclick="openTab(event, 'Tab1')">Teacher's wishes</button>
+		<button class="tablinks" onclick="openTab(event, 'Tab2')">Nguyen Bao Nam's wishes</button>
+		<button class="tablinks" onclick="openTab(event, 'Tab3')">Bui Viet Nam's wishes
+		</button>
+	</div>
+	<div id="Tab1" class="tabcontent">
+		<h2>Your Teacher</h2>
+		<img style="border: 10px solid white; border-radius: 20px;"width="400" src="https://pbs.twimg.com/media/GqLqR0dWoAAFhAe?format=jpg&name=medium">
+		<p>Happy birthday to you, Viet! May the special day of your life bring you joy, laughter, and the inspiration to keep exploring your passions! </p>
+		<p>On this birthday, I wish you a world of opportunities and the courage to chase your dreams! Wishing you a fantastic day!</p>
+		<p>May your birthday be filled with wonderful memories, amazing accomplishments, and the determination to continue growing and learning! Wishing you a fantastic day!</p>
+		<p>Lots of love, your English Teacher xxx</p>
+	</div>
+	<div id="Tab2" class="tabcontent">
+		<h2>Your Brother</h2>
+		<p>Happy birthday Viet! Have a great birthday. We wish a lot of money and luck. So if you have happy frineds, your life will give happiness. You know that Birthday is a perfect.</p>
+		<p>Now you can see photos from Viet in childhood.</p>
+		<div class="broimg">
+			<img class="sigma" width="400" src="https://pbs.twimg.com/media/GqLpuCIXgAAPnbH?format=jpg&name=large">
+			<img class="sigma" width="400" src="https://pbs.twimg.com/media/GqLqR0fXsAE2ihj?format=jpg&name=large">
+			<img width="400" src="https://pbs.twimg.com/media/GqLpuCPXQAAbrpJ?format=jpg&name=large">
+		</div>
+		<p>Have a nice day!</p>
+
+	</div>
+	<div id="Tab3" class="tabcontent">
+		<h2>Sigma boy</h2>
+		<p>Happy birthday Viet! Have a great birthday. We wish you a lot of money and luck. So if you have happy friends, your life will give happiness. You know that Birthday is a perfect.</p>
+		<p>Now you can see photos from Viet in childhood!</p>
+		<div class="broimg">
+			<img width="300" src="https://pbs.twimg.com/media/GqMX1VRWcAACgiM?format=png&name=360x360">
+			<img width="300" src="https://pbs.twimg.com/media/GqMX1aAXQAAGlcW?format=png&name=small">
+			<img width="300" src="https://pbs.twimg.com/media/GqMX1VeXYAAcK7C?format=png&name=small">
+			<img width="300" src="https://pbs.twimg.com/media/GqMX1ZlW0AAjdbS?format=png&name=900x900">
+		</div>
+		<p>Enjoy your day!</p>
+	</div>
+	<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      	document.querySelector(".tablinks").click();
+    });
+
+
+  	</script>
+
+</body>
+
+</html>
